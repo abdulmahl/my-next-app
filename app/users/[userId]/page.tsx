@@ -10,13 +10,15 @@ type Params = {
   };
 };
 
-export async function generateMetadata({ params: { userId } }: Params): Promise<Metadata> {
+export async function generateMetadata({
+  params: { userId },
+}: Params): Promise<Metadata> {
   const userData: Promise<User> = getUser(userId);
   const user: User = await userData;
 
   return {
     title: user.name,
-    description: `This is the page of ${user.name}`
+    description: `This is the page of ${user.name}`,
   };
 }
 

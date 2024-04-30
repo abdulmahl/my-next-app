@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 export default async function UsersPage() {
   const usersData: Promise<User[]> = getAllUsers();
   const users = await usersData;
+
+  console.log("Hello...");
+
   const content = (
     <section>
       <h2>
