@@ -2,9 +2,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Home",
   description: "Home Page Created by Abdul",
 };
